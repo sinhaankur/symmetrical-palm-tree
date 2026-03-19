@@ -1276,6 +1276,7 @@ const solutions = [
         medium: "Sensors",
         description: "Real-time monitoring for water leaks, mechanical malfunctions, and automated alerts to staff.",
         span: "col-span-2 row-span-1",
+        upcoming: true,
         details: {
             tagline: "Prevent problems before they happen",
             features: [
@@ -1395,7 +1396,7 @@ function WorkSection() {
                                 children: "02 / Solutions"
                             }, void 0, false, {
                                 fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-                                lineNumber: 203,
+                                lineNumber: 204,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1403,13 +1404,13 @@ function WorkSection() {
                                 children: "CORE PLATFORMS"
                             }, void 0, false, {
                                 fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-                                lineNumber: 204,
+                                lineNumber: 205,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-                        lineNumber: 202,
+                        lineNumber: 203,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1417,13 +1418,13 @@ function WorkSection() {
                         children: "Click any platform to explore features and capabilities."
                     }, void 0, false, {
                         fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-                        lineNumber: 206,
+                        lineNumber: 207,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-                lineNumber: 201,
+                lineNumber: 202,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1436,12 +1437,12 @@ function WorkSection() {
                         onClick: ()=>setSelectedSolution(selectedSolution?.id === solution.id ? null : solution)
                     }, solution.id, false, {
                         fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-                        lineNumber: 217,
+                        lineNumber: 218,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-                lineNumber: 212,
+                lineNumber: 213,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(SolutionDetailPanel, {
@@ -1449,13 +1450,13 @@ function WorkSection() {
                 onClose: ()=>setSelectedSolution(null)
             }, void 0, false, {
                 fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-                lineNumber: 228,
+                lineNumber: 229,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-        lineNumber: 199,
+        lineNumber: 200,
         columnNumber: 5
     }, this);
 }
@@ -1484,11 +1485,19 @@ function WorkCard({ solution, index, isSelected, onClick }) {
         onMouseLeave: ()=>setIsHovered(false),
         onClick: onClick,
         children: [
+            solution.upcoming && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                className: "absolute top-3 right-3 z-20 bg-yellow-400 text-black font-mono text-[10px] px-2 py-1 rounded shadow",
+                children: "Upcoming"
+            }, void 0, false, {
+                fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
+                lineNumber: 283,
+                columnNumber: 9
+            }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("absolute inset-0 bg-accent/5 transition-opacity duration-500", isActive ? "opacity-100" : "opacity-0")
             }, void 0, false, {
                 fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-                lineNumber: 281,
+                lineNumber: 288,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1499,7 +1508,7 @@ function WorkCard({ solution, index, isSelected, onClick }) {
                         children: solution.medium
                     }, void 0, false, {
                         fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-                        lineNumber: 290,
+                        lineNumber: 297,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1507,13 +1516,13 @@ function WorkCard({ solution, index, isSelected, onClick }) {
                         children: solution.title
                     }, void 0, false, {
                         fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-                        lineNumber: 293,
+                        lineNumber: 300,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-                lineNumber: 289,
+                lineNumber: 296,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1523,12 +1532,12 @@ function WorkCard({ solution, index, isSelected, onClick }) {
                     children: solution.description
                 }, void 0, false, {
                     fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-                    lineNumber: 305,
+                    lineNumber: 312,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-                lineNumber: 304,
+                lineNumber: 311,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1536,7 +1545,7 @@ function WorkCard({ solution, index, isSelected, onClick }) {
                 children: isSelected ? "SELECTED" : `0${index + 1}`
             }, void 0, false, {
                 fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-                lineNumber: 316,
+                lineNumber: 323,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1546,26 +1555,26 @@ function WorkCard({ solution, index, isSelected, onClick }) {
                         className: "absolute top-0 right-0 w-full h-[1px] bg-accent"
                     }, void 0, false, {
                         fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-                        lineNumber: 332,
+                        lineNumber: 339,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute top-0 right-0 w-[1px] h-full bg-accent"
                     }, void 0, false, {
                         fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-                        lineNumber: 333,
+                        lineNumber: 340,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-                lineNumber: 326,
+                lineNumber: 333,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-        lineNumber: 268,
+        lineNumber: 269,
         columnNumber: 5
     }, this);
 }
@@ -1600,7 +1609,7 @@ function SolutionDetailPanel({ solution, onClose }) {
             className: "overflow-hidden"
         }, void 0, false, {
             fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-            lineNumber: 363,
+            lineNumber: 370,
             columnNumber: 12
         }, this);
     }
@@ -1620,7 +1629,7 @@ function SolutionDetailPanel({ solution, onClose }) {
                                     children: solution.medium
                                 }, void 0, false, {
                                     fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-                                    lineNumber: 372,
+                                    lineNumber: 379,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1628,7 +1637,7 @@ function SolutionDetailPanel({ solution, onClose }) {
                                     children: solution.title
                                 }, void 0, false, {
                                     fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-                                    lineNumber: 375,
+                                    lineNumber: 382,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1636,13 +1645,13 @@ function SolutionDetailPanel({ solution, onClose }) {
                                     children: solution.details.tagline
                                 }, void 0, false, {
                                     fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-                                    lineNumber: 378,
+                                    lineNumber: 385,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-                            lineNumber: 371,
+                            lineNumber: 378,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1651,13 +1660,13 @@ function SolutionDetailPanel({ solution, onClose }) {
                             children: "Close"
                         }, void 0, false, {
                             fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-                            lineNumber: 382,
+                            lineNumber: 389,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-                    lineNumber: 370,
+                    lineNumber: 377,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1670,7 +1679,7 @@ function SolutionDetailPanel({ solution, onClose }) {
                                     children: "Key Features"
                                 }, void 0, false, {
                                     fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-                                    lineNumber: 394,
+                                    lineNumber: 401,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -1692,17 +1701,17 @@ function SolutionDetailPanel({ solution, onClose }) {
                                                             strokeLinecap: "square"
                                                         }, void 0, false, {
                                                             fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-                                                            lineNumber: 402,
+                                                            lineNumber: 409,
                                                             columnNumber: 23
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-                                                        lineNumber: 401,
+                                                        lineNumber: 408,
                                                         columnNumber: 21
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-                                                    lineNumber: 400,
+                                                    lineNumber: 407,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1710,24 +1719,24 @@ function SolutionDetailPanel({ solution, onClose }) {
                                                     children: feature
                                                 }, void 0, false, {
                                                     fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-                                                    lineNumber: 405,
+                                                    lineNumber: 412,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, i, true, {
                                             fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-                                            lineNumber: 399,
+                                            lineNumber: 406,
                                             columnNumber: 17
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-                                    lineNumber: 397,
+                                    lineNumber: 404,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-                            lineNumber: 393,
+                            lineNumber: 400,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1737,7 +1746,7 @@ function SolutionDetailPanel({ solution, onClose }) {
                                     children: "Impact Metrics"
                                 }, void 0, false, {
                                     fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-                                    lineNumber: 413,
+                                    lineNumber: 420,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1750,7 +1759,7 @@ function SolutionDetailPanel({ solution, onClose }) {
                                                     children: stat.value
                                                 }, void 0, false, {
                                                     fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-                                                    lineNumber: 419,
+                                                    lineNumber: 426,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1758,30 +1767,30 @@ function SolutionDetailPanel({ solution, onClose }) {
                                                     children: stat.label
                                                 }, void 0, false, {
                                                     fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-                                                    lineNumber: 422,
+                                                    lineNumber: 429,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, i, true, {
                                             fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-                                            lineNumber: 418,
+                                            lineNumber: 425,
                                             columnNumber: 17
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-                                    lineNumber: 416,
+                                    lineNumber: 423,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-                            lineNumber: 412,
+                            lineNumber: 419,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-                    lineNumber: 391,
+                    lineNumber: 398,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1796,7 +1805,7 @@ function SolutionDetailPanel({ solution, onClose }) {
                             ]
                         }, void 0, true, {
                             fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-                            lineNumber: 433,
+                            lineNumber: 440,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1816,35 +1825,35 @@ function SolutionDetailPanel({ solution, onClose }) {
                                         strokeLinecap: "square"
                                     }, void 0, false, {
                                         fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-                                        lineNumber: 442,
+                                        lineNumber: 449,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-                                    lineNumber: 441,
+                                    lineNumber: 448,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-                            lineNumber: 436,
+                            lineNumber: 443,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-                    lineNumber: 432,
+                    lineNumber: 439,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-            lineNumber: 368,
+            lineNumber: 375,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/This/symmetrical-palm-tree/components/work-section.tsx",
-        lineNumber: 367,
+        lineNumber: 374,
         columnNumber: 5
     }, this);
 }
@@ -2743,8 +2752,46 @@ function PricingSection() {
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         className: "mt-4 max-w-lg font-mono text-sm text-muted-foreground leading-relaxed",
-                        children: "Scalable pricing for facilities of all sizes. All plans include core security features and compliance tools."
-                    }, void 0, false, {
+                        children: [
+                            "Scalable pricing for facilities of all sizes. All plans include core security features and compliance tools.",
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                fileName: "[project]/This/symmetrical-palm-tree/components/pricing-section.tsx",
+                                lineNumber: 117,
+                                columnNumber: 119
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "block mt-2 text-xs text-accent-foreground",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                        children: "Estimated pricing:"
+                                    }, void 0, false, {
+                                        fileName: "[project]/This/symmetrical-palm-tree/components/pricing-section.tsx",
+                                        lineNumber: 119,
+                                        columnNumber: 13
+                                    }, this),
+                                    " Pricing is per residential/commercial unit per month. For example, a 100-unit building on the Essential plan would be ",
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
+                                        children: "$250/month"
+                                    }, void 0, false, {
+                                        fileName: "[project]/This/symmetrical-palm-tree/components/pricing-section.tsx",
+                                        lineNumber: 119,
+                                        columnNumber: 167
+                                    }, this),
+                                    ".",
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                        fileName: "[project]/This/symmetrical-palm-tree/components/pricing-section.tsx",
+                                        lineNumber: 119,
+                                        columnNumber: 185
+                                    }, this),
+                                    "For Enterprise or custom requirements, please contact sales for a tailored quote."
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/This/symmetrical-palm-tree/components/pricing-section.tsx",
+                                lineNumber: 118,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
                         fileName: "[project]/This/symmetrical-palm-tree/components/pricing-section.tsx",
                         lineNumber: 116,
                         columnNumber: 9
@@ -2768,12 +2815,12 @@ function PricingSection() {
                                     children: "Most Popular"
                                 }, void 0, false, {
                                     fileName: "[project]/This/symmetrical-palm-tree/components/pricing-section.tsx",
-                                    lineNumber: 134,
+                                    lineNumber: 138,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/This/symmetrical-palm-tree/components/pricing-section.tsx",
-                                lineNumber: 133,
+                                lineNumber: 137,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2784,7 +2831,7 @@ function PricingSection() {
                                         children: plan.name
                                     }, void 0, false, {
                                         fileName: "[project]/This/symmetrical-palm-tree/components/pricing-section.tsx",
-                                        lineNumber: 141,
+                                        lineNumber: 145,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2792,13 +2839,13 @@ function PricingSection() {
                                         children: plan.description
                                     }, void 0, false, {
                                         fileName: "[project]/This/symmetrical-palm-tree/components/pricing-section.tsx",
-                                        lineNumber: 142,
+                                        lineNumber: 146,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/This/symmetrical-palm-tree/components/pricing-section.tsx",
-                                lineNumber: 140,
+                                lineNumber: 144,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2809,7 +2856,7 @@ function PricingSection() {
                                         children: plan.price
                                     }, void 0, false, {
                                         fileName: "[project]/This/symmetrical-palm-tree/components/pricing-section.tsx",
-                                        lineNumber: 146,
+                                        lineNumber: 150,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2817,13 +2864,13 @@ function PricingSection() {
                                         children: plan.period
                                     }, void 0, false, {
                                         fileName: "[project]/This/symmetrical-palm-tree/components/pricing-section.tsx",
-                                        lineNumber: 147,
+                                        lineNumber: 151,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/This/symmetrical-palm-tree/components/pricing-section.tsx",
-                                lineNumber: 145,
+                                lineNumber: 149,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -2835,7 +2882,7 @@ function PricingSection() {
                                                 className: "mt-1.5 h-1.5 w-1.5 bg-accent flex-shrink-0"
                                             }, void 0, false, {
                                                 fileName: "[project]/This/symmetrical-palm-tree/components/pricing-section.tsx",
-                                                lineNumber: 153,
+                                                lineNumber: 157,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2843,18 +2890,18 @@ function PricingSection() {
                                                 children: feature
                                             }, void 0, false, {
                                                 fileName: "[project]/This/symmetrical-palm-tree/components/pricing-section.tsx",
-                                                lineNumber: 154,
+                                                lineNumber: 158,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, featureIndex, true, {
                                         fileName: "[project]/This/symmetrical-palm-tree/components/pricing-section.tsx",
-                                        lineNumber: 152,
+                                        lineNumber: 156,
                                         columnNumber: 17
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/This/symmetrical-palm-tree/components/pricing-section.tsx",
-                                lineNumber: 150,
+                                lineNumber: 154,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -2867,112 +2914,55 @@ function PricingSection() {
                                         duration: 0.5
                                     }, void 0, false, {
                                         fileName: "[project]/This/symmetrical-palm-tree/components/pricing-section.tsx",
-                                        lineNumber: 167,
+                                        lineNumber: 171,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$components$2f$bitmap$2d$chevron$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["BitmapChevron"], {
                                         className: "transition-transform duration-[400ms] ease-in-out group-hover:translate-x-1"
                                     }, void 0, false, {
                                         fileName: "[project]/This/symmetrical-palm-tree/components/pricing-section.tsx",
-                                        lineNumber: 168,
+                                        lineNumber: 172,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/This/symmetrical-palm-tree/components/pricing-section.tsx",
-                                lineNumber: 159,
+                                lineNumber: 163,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, index, true, {
                         fileName: "[project]/This/symmetrical-palm-tree/components/pricing-section.tsx",
-                        lineNumber: 124,
+                        lineNumber: 128,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/This/symmetrical-palm-tree/components/pricing-section.tsx",
-                lineNumber: 122,
+                lineNumber: 126,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "mt-16 flex flex-wrap items-center justify-center gap-8 border-t border-border/20 pt-16",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex items-center gap-2",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "h-2 w-2 bg-accent"
-                            }, void 0, false, {
-                                fileName: "[project]/This/symmetrical-palm-tree/components/pricing-section.tsx",
-                                lineNumber: 177,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "font-mono text-[10px] uppercase tracking-widest text-muted-foreground",
-                                children: "14-day free trial"
-                            }, void 0, false, {
-                                fileName: "[project]/This/symmetrical-palm-tree/components/pricing-section.tsx",
-                                lineNumber: 178,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/This/symmetrical-palm-tree/components/pricing-section.tsx",
-                        lineNumber: 176,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex items-center gap-2",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "h-2 w-2 bg-accent"
-                            }, void 0, false, {
-                                fileName: "[project]/This/symmetrical-palm-tree/components/pricing-section.tsx",
-                                lineNumber: 181,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "font-mono text-[10px] uppercase tracking-widest text-muted-foreground",
-                                children: "No credit card required"
-                            }, void 0, false, {
-                                fileName: "[project]/This/symmetrical-palm-tree/components/pricing-section.tsx",
-                                lineNumber: 182,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/This/symmetrical-palm-tree/components/pricing-section.tsx",
-                        lineNumber: 180,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex items-center gap-2",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "h-2 w-2 bg-accent"
-                            }, void 0, false, {
-                                fileName: "[project]/This/symmetrical-palm-tree/components/pricing-section.tsx",
-                                lineNumber: 185,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "font-mono text-[10px] uppercase tracking-widest text-muted-foreground",
-                                children: "Cancel anytime"
-                            }, void 0, false, {
-                                fileName: "[project]/This/symmetrical-palm-tree/components/pricing-section.tsx",
-                                lineNumber: 186,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/This/symmetrical-palm-tree/components/pricing-section.tsx",
-                        lineNumber: 184,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                    className: "font-mono text-xs text-accent-foreground bg-accent/10 px-4 py-2 rounded",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$This$2f$symmetrical$2d$palm$2d$tree$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$0$2d$canary$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
+                            children: "Note:"
+                        }, void 0, false, {
+                            fileName: "[project]/This/symmetrical-palm-tree/components/pricing-section.tsx",
+                            lineNumber: 181,
+                            columnNumber: 11
+                        }, this),
+                        " This is a paid-only application. All plans require payment to activate. Please review the pricing table above for details."
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/This/symmetrical-palm-tree/components/pricing-section.tsx",
+                    lineNumber: 180,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
                 fileName: "[project]/This/symmetrical-palm-tree/components/pricing-section.tsx",
-                lineNumber: 175,
+                lineNumber: 179,
                 columnNumber: 7
             }, this)
         ]

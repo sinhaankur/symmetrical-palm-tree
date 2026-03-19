@@ -164,40 +164,7 @@ export default function SignInPage() {
           </button>
         </form>
 
-        {/* Demo Login Section */}
-        <div className="mt-10 pt-8 border-t border-border/40">
-          <p className="text-center font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-6">
-            Or try a demo account
-          </p>
-          <div className="space-y-3">
-            {demoUsers.map((demo) => (
-              <button
-                key={demo.role}
-                onClick={() => handleDemoLogin(demo.role, demo.email, demo.label)}
-                disabled={demoLoading !== null}
-                className="w-full flex items-center justify-between border border-border/60 bg-card/30 px-4 py-3 hover:border-accent/50 hover:bg-accent/5 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed group"
-              >
-                <div className="text-left">
-                  <p className="font-mono text-xs text-foreground group-hover:text-accent transition-colors">
-                    {demoLoading === demo.role ? "Loading..." : demo.label}
-                  </p>
-                  <p className="font-mono text-[10px] text-muted-foreground">{demo.description}</p>
-                </div>
-                <BitmapChevron className="text-muted-foreground group-hover:text-accent transition-colors" />
-              </button>
-            ))}
-          </div>
-        </div>
-
-        {/* Footer */}
-        <div className="mt-8 text-center">
-          <p className="font-mono text-xs text-muted-foreground">
-            {"Don't have an account? "}
-            <Link href="/signup" className="text-accent hover:underline">
-              Create one
-            </Link>
-          </p>
-        </div>
+        {/* Only sign in form is shown. Demo login and account creation removed. */}
 
         {/* Back link */}
         <div className="mt-12 text-center">

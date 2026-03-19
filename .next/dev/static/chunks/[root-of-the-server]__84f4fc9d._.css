@@ -505,8 +505,10 @@
     --color-red-400: #ff6568;
     --color-red-500: #fb2c36;
     --color-red-600: #e40014;
+    --color-yellow-100: #fef9c2;
     --color-yellow-400: #fac800;
     --color-yellow-500: #edb200;
+    --color-yellow-800: #874b00;
     --color-green-400: #05df72;
     --color-green-500: #00c758;
     --color-blue-400: #54a2ff;
@@ -519,6 +521,7 @@
     --container-md: 28rem;
     --container-lg: 32rem;
     --container-xl: 36rem;
+    --container-3xl: 48rem;
     --container-4xl: 56rem;
     --text-xs: .75rem;
     --text-xs--line-height: calc(1 / .75);
@@ -547,6 +550,7 @@
     --font-weight-normal: 400;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
+    --font-weight-bold: 700;
     --tracking-tight: -.025em;
     --tracking-wide: .025em;
     --tracking-wider: .05em;
@@ -575,8 +579,10 @@
       --color-red-400: lab(63.7053% 60.745 31.3109);
       --color-red-500: lab(55.4814% 75.0732 48.8528);
       --color-red-600: lab(48.4493% 77.4328 61.5452);
+      --color-yellow-100: lab(97.3564% -4.51407 27.344);
       --color-yellow-400: lab(83.2664% 8.65132 106.895);
       --color-yellow-500: lab(76.3898% 14.5258 98.4589);
+      --color-yellow-800: lab(38.7484% 23.5833 51.4916);
       --color-green-400: lab(78.503% -64.9265 39.7492);
       --color-green-500: lab(70.5521% -66.5147 45.8073);
       --color-blue-400: lab(65.0361% -1.42065 -56.9802);
@@ -971,6 +977,10 @@
     position: relative;
   }
 
+  .static {
+    position: static;
+  }
+
   .inset-0 {
     inset: calc(var(--spacing) * 0);
   }
@@ -1017,6 +1027,10 @@
 
   .top-2 {
     top: calc(var(--spacing) * 2);
+  }
+
+  .top-3 {
+    top: calc(var(--spacing) * 3);
   }
 
   .top-3\.5 {
@@ -1752,6 +1766,10 @@
     max-width: var(--skeleton-width);
   }
 
+  .max-w-3xl {
+    max-width: var(--container-3xl);
+  }
+
   .max-w-4xl {
     max-width: var(--container-4xl);
   }
@@ -2267,6 +2285,10 @@
 
   .overflow-y-auto {
     overflow-y: auto;
+  }
+
+  .rounded {
+    border-radius: .25rem;
   }
 
   .rounded-\[2px\] {
@@ -2821,6 +2843,14 @@
     background-color: var(--color-white);
   }
 
+  .bg-yellow-100 {
+    background-color: var(--color-yellow-100);
+  }
+
+  .bg-yellow-400 {
+    background-color: var(--color-yellow-400);
+  }
+
   .bg-yellow-500 {
     background-color: var(--color-yellow-500);
   }
@@ -2975,6 +3005,10 @@
 
   .py-6 {
     padding-block: calc(var(--spacing) * 6);
+  }
+
+  .py-16 {
+    padding-block: calc(var(--spacing) * 16);
   }
 
   .py-32 {
@@ -3188,6 +3222,11 @@
     font-weight: var(--font-bebas);
   }
 
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
@@ -3260,6 +3299,10 @@
 
   .text-background {
     color: var(--background);
+  }
+
+  .text-black {
+    color: var(--color-black);
   }
 
   .text-blue-400 {
@@ -3406,6 +3449,10 @@
 
   .text-yellow-500 {
     color: var(--color-yellow-500);
+  }
+
+  .text-yellow-800 {
+    color: var(--color-yellow-800);
   }
 
   .uppercase {

@@ -114,7 +114,11 @@ export function PricingSection() {
         <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">05 / Pricing</span>
         <h2 className="mt-4 font-[var(--font-bebas)] text-5xl md:text-7xl tracking-tight">CHOOSE YOUR PLAN</h2>
         <p className="mt-4 max-w-lg font-mono text-sm text-muted-foreground leading-relaxed">
-          Scalable pricing for facilities of all sizes. All plans include core security features and compliance tools.
+          Scalable pricing for facilities of all sizes. All plans include core security features and compliance tools.<br />
+          <span className="block mt-2 text-xs text-accent-foreground">
+            <strong>Estimated pricing:</strong> Pricing is per residential/commercial unit per month. For example, a 100-unit building on the Essential plan would be <b>$250/month</b>.<br />
+            For Enterprise or custom requirements, please contact sales for a tailored quote.
+          </span>
         </p>
       </div>
 
@@ -171,20 +175,11 @@ export function PricingSection() {
         ))}
       </div>
 
-      {/* Trust badges */}
+      {/* Pricing Table Notice */}
       <div className="mt-16 flex flex-wrap items-center justify-center gap-8 border-t border-border/20 pt-16">
-        <div className="flex items-center gap-2">
-          <span className="h-2 w-2 bg-accent" />
-          <span className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">14-day free trial</span>
-        </div>
-        <div className="flex items-center gap-2">
-          <span className="h-2 w-2 bg-accent" />
-          <span className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">No credit card required</span>
-        </div>
-        <div className="flex items-center gap-2">
-          <span className="h-2 w-2 bg-accent" />
-          <span className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">Cancel anytime</span>
-        </div>
+        <span className="font-mono text-xs text-accent-foreground bg-accent/10 px-4 py-2 rounded">
+          <b>Note:</b> This is a paid-only application. All plans require payment to activate. Please review the pricing table above for details.
+        </span>
       </div>
     </section>
   )

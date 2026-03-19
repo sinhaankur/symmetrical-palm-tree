@@ -106,6 +106,7 @@ const solutions = [
     medium: "Sensors",
     description: "Real-time monitoring for water leaks, mechanical malfunctions, and automated alerts to staff.",
     span: "col-span-2 row-span-1",
+    upcoming: true, // Mark as upcoming
     details: {
       tagline: "Prevent problems before they happen",
       features: [
@@ -277,6 +278,12 @@ function WorkCard({
       onMouseLeave={() => setIsHovered(false)}
       onClick={onClick}
     >
+      {/* Upcoming badge for Aware IoT */}
+      {solution.upcoming && (
+        <span className="absolute top-3 right-3 z-20 bg-yellow-400 text-black font-mono text-[10px] px-2 py-1 rounded shadow">
+          Upcoming
+        </span>
+      )}
       {/* Background layer */}
       <div
         className={cn(

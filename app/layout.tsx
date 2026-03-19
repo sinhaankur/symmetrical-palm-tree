@@ -4,6 +4,7 @@ import { IBM_Plex_Sans, IBM_Plex_Mono, Bebas_Neue } from "next/font/google"
 // import { Analytics } from "@vercel/analytics/next"
 import { SmoothScroll } from "@/components/smooth-scroll"
 import { AuthProvider } from "@/lib/auth-context"
+import { SessionProvider } from "next-auth/react"
 import { ThemeProvider } from "@/lib/theme-context"
 import "./globals.css"
 
@@ -54,11 +55,13 @@ export default function RootLayout({
         className={`${ibmPlexSans.variable} ${bebasNeue.variable} ${ibmPlexMono.variable} font-sans antialiased overflow-x-hidden`}
       >
         <div className="noise-overlay" aria-hidden="true" />
-        <ThemeProvider>
-          <AuthProvider>
-            <SmoothScroll>{children}</SmoothScroll>
-          </AuthProvider>
-        </ThemeProvider>
+        <SessionProvider>
+          <ThemeProvider>
+            <AuthProvider>
+              <SmoothScroll>{children}</SmoothScroll>
+            </AuthProvider>
+          </ThemeProvider>
+        </SessionProvider>
         {/* <Analytics /> */}
       </body>
     </html>
