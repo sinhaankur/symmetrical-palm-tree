@@ -31,3 +31,17 @@
 
 ## Contact
 For detailed pricing, deployment, or security information, please contact the BuildingAi-Cloud team.
+
+## Aware IoT (Upcoming)
+
+Prevent problems before they happen with our upcoming Aware IoT module.
+
+### Key Features (Planned)
+- Water leak detection sensors
+- HVAC performance monitoring
+- Electrical system alerts
+- Temperature and humidity tracking
+- Automated staff notifications
+- Historical trend analysis
+
+Stay tuned for updates as we expand the platform with advanced IoT capabilities to help you proactively manage your facilities.
