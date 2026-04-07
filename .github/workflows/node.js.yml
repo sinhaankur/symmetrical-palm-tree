@@ -30,4 +30,4 @@ jobs:
         version: 9
     - run: pnpm install --frozen-lockfile
     - run: pnpm run build
-    - run: pnpm test
+    - run: pnpm run test --if-present
