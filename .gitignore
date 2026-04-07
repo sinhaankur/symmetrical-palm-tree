@@ -1,1 +1,8 @@
 node_modules
+.next
+.turbo
+out
+dist
+coverage
+.cache
+.DS_Store
